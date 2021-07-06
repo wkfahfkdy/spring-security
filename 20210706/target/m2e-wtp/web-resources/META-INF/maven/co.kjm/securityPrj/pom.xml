@@ -12,6 +12,7 @@
 		<org.springframework-version>5.1.15.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
+		<security.version>4.2.7.RELEASE</security.version>
 	</properties>
 	<dependencies>
 		<!-- Spring -->
@@ -71,14 +72,30 @@
 		<!-- login Security 만들어보기 -->
 		<dependency> 
 			<groupId>org.springframework.security</groupId> 
+			<artifactId>spring-security-core</artifactId> 
+			<version>${security.version}</version> 
+		</dependency> 
+		<dependency> 
+			<groupId>org.springframework.security</groupId> 
 			<artifactId>spring-security-web</artifactId> 
-			<version>4.2.2.RELEASE</version> 
+			<version>${security.version}</version> 
 		</dependency> 
 		<dependency> 
 			<groupId>org.springframework.security</groupId> 
 			<artifactId>spring-security-config</artifactId> 
-			<version>4.2.2.RELEASE</version> 
+			<version>${security.version}</version> 
+		</dependency> 
+		<dependency> 
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId> 
+			<version>${security.version}</version> 
+		</dependency> 
+		<dependency> 
+			<groupId>org.springframework.security</groupId> 
+			<artifactId>spring-security-test</artifactId> 
+			<version>${security.version}</version> 
 		</dependency>
+
 
 				
 		<!-- AspectJ -->
